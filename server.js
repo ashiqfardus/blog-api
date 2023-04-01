@@ -45,13 +45,6 @@ app.use('/api/v1/comments', commentRoutes);
 //Error handlers
 app.use(errorHandler);
 
-//404 error handler
-app.use("*", (req,res)=>{
-    res.status(404).json({
-        success:false,
-        message: `${req.originalUrl} - Route not found.`
-    })
-})
 
 
 //Listen to server
