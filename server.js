@@ -62,4 +62,3 @@ if (require.main === module) {
         console.log(`Server connected to ${process.env.NODE_ENV} mode on port ${PORT}`);
     });
 }
-export default app;
